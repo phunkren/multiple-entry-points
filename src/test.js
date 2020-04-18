@@ -12,7 +12,7 @@ function Test() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Test />
   </React.StrictMode>,
   document.getElementById("root")
 );
