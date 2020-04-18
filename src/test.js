@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function App() {
+function Test() {
   return (
     <div>
-      <h1>Application</h1>
-      <p>This is an example container for the main application</p>
+      <h1>Test</h1>
+      <p>This is an example container for the test application</p>
     </div>
   );
 }
