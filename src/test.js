@@ -1,7 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-function Test() {
+console.log("NOTE: This should only appear in the test build bundle");
+
+export default function Test() {
+  console.log("NOTE: This should only appear in the test build bundle");
   return (
     <div>
       <h1>Test</h1>
@@ -9,10 +11,3 @@ function Test() {
     </div>
   );
 }
-
-ReactDOM.render(
-  <React.StrictMode>
-    <Test />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
