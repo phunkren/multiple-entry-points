@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 if (process.env.REACT_APP_BUILD_TARGET === "app") {
-  import(`./app.js`).then(({ default: App }) => {
+  await import(`./app.js`).then(({ default: App }) => {
     ReactDOM.render(
       <React.StrictMode>
         <App />
@@ -13,7 +13,7 @@ if (process.env.REACT_APP_BUILD_TARGET === "app") {
 }
 
 if (process.env.REACT_APP_BUILD_TARGET === "test") {
-  import(`./test.js`).then(({ default: Test }) => {
+  await import(`./test.js`).then(({ default: Test }) => {
     ReactDOM.render(
       <React.StrictMode>
         <Test />
